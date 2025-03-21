@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="icon" type="image/png" href="logo.png">
+   <title>El museo virtual de la clase de español</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      body{
+        background-image: url(fond.jpg);
+        background-attachment:fixed;
+        margin: 0; 
+        height: 100%; 
+
+      }
+
+      .w3-content {
+         position: relative;
+         width: 1000px;
+         height: 500px;
+         object-fit: cover;
+         overflow: hidden;
+         margin: auto;
+         border-radius: 8px;
+      }
+
+
+      .w3-left, .w3-right {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         color: white;
+         font-size: 30px;
+         font-weight: bold;
+         cursor: pointer;
+         user-select: none;
+         z-index: 2;
+         padding: 10px;
+      }
+      .w3-left {
+         left: 10px;
+      }
+      .w3-right {
+         right: 10px; 
+      }
+      .w3-left:hover, .w3-right:hover {
+         color: #5a5757;
+      }
+
+      /* Dots (markers) styling */
+      .w3-center {
+         position: absolute;
+         bottom: 15px; /* Positioned near the bottom of the image */
+         left: 50%; /* Center horizontally */
+         transform: translateX(-50%);
+         z-index: 2;
+      }
+
+      .w3-badge {
+         height: 13px;
+         width: 13px;
+         margin: 5px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         cursor: pointer;
+      }
+      .w3-badge.active, .w3-badge:hover {
+         background-color: #717171;
+      }
+
+      /* Slide text styling */
+      .slide-text {
+        position: absolute;
+        bottom: 50%; /* Center vertically relative to the image */
+        left: 50%;   /* Center horizontally */
+        transform: translate(-50%, 50%); /* Center align using translate */
+        color: white;
+        border-radius: 8px; /* Rounded corners */
+        font-size: 100px; /* Increased font size */
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        transform-origin: center;
+      }
+
+      .slide-text:hover {
+        color: #cacaca;
+    }
+    .intro{
+    margin-top: 0px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+  }
+  .propos{
+    color: white;
+    text-align: justify;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 24%;
+    margin-right: 24%;
+    font-size: 30px;
+    padding-bottom: 10%;
+  }
+  h6{color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;}
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.logomid{
+margin-left:50%;
+margin-top: -70px;
+padding-left: -75px;
+height: 50px;
+width: auto;
+}
+ul {
+display: block;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #2c2c2c;
+border-bottom: black;
+border-width: 2px;
+}
+
+   </style>
+</head>
+<body>  
+  <div class="header">
+    <div class="navbar">
+      <ul>
+        <li><a href="https://www.lycee-descartes.ac.ma"><img src="descartes.png" width="190" height="70"></a></li>
+        <li><a href="index.html"><img src="logo.png" class="logomid"></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="intro"><h7>El Museo Virtual Del Grupo 3 De Español</h7></div>
+  <hr style="width: 50%;margin: auto;color: aliceblue;background-color: aliceblue;border-radius: 100px;height: 3px;margin-bottom: 15px;">
+  <div class="w3-content" style="max-width: 1000px;max-height: 500px;">
+       <div class="mySlides" data-url="el greco.pdf">
+      <img src="elgreco.jpg" alt="volley"style="width: 100%;">
+      <div class="slide-text">EL GRECO</div>
+    </div>
+    <div class="mySlides" data-url="botero.pdf">
+      <img src="bote.webp" alt="Judo"style="width: 100%;height: 100%;">
+      <div class="slide-text">Botero 1</div>
+    </div>
+    <div class="mySlides" data-url="Joan Miró.pdf">
+      <img src="miro.jpg" alt="Table Tennis"style="width: 100%;height: 100%;">
+      <div class="slide-text">JOAN MIRO</div>
+    </div>
+    <div class="mySlides" data-url="Copie de Diego Rivera.pdf">
+      <img src="rivera.jpg" alt="Atletism"style="width: 100%;height: 100%;">
+      <div class="slide-text">DIEGO RIVERA</div>
+    </div>
+    <div class="mySlides" data-url="BOTERO 1.pdf">
+      <img src="boter.jpg" alt="Tennis"style="width: 100%;height: 100%;">
+      <div class="slide-text">BOTERO 2</div>
+    </div>
+    <a class="w3-left" onclick="plusDivs(-1)">&#10094;</a>
+    <a class="w3-right" onclick="plusDivs(1)">&#10095;</a>
+
+    <div class="w3-center">
+      <span class="w3-badge" onclick="currentDiv(1)"></span>
+      <span class="w3-badge" onclick="currentDiv(2)"></span>
+      <span class="w3-badge" onclick="currentDiv(3)"></span>
+      <span class="w3-badge" onclick="currentDiv(4)"></span>
+      <span class="w3-badge" onclick="currentDiv(5)"></span>
+    </div>
+  </div>
+  <div class="propos"><p>• Les élèves de terminale du groupe 3 de Mr.BENMANNANA ont eu l'occasion de se pencher sur différentes figures majeures de l'art dans le monde hispanique. Vous pourrez retrouver sur ce site une sélection de quelques unes de leurs réalisations. </p></div>
+  <div class="footer">
+    <h6>Affiches réalisées par le groupe 3 de Terminale LVC Espagnol de Mr.BENMANNANA</h6>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("w3-badge");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+
+
+      var activeSlide = slides[slideIndex-1];
+      var textElement = activeSlide.querySelector(".slide-text");
+      var url = activeSlide.getAttribute("data-url");
+      textElement.onclick = function() {
+        window.location.href = url;
+      };
+    }
+  </script>
+</body>
+</html>
